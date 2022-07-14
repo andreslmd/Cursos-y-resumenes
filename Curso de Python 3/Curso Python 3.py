@@ -3,5 +3,5 @@
 #Hola a todos comenzare con este pequeño curso de Python es la forma donde estare enseñando lo poco que ire aprendiendo.
 #. 
 
-#NO PUEDE DEJAR DE FALTA FAMOSO:
+#NO PUEDE DEJAR DE FALTA El FAMOSO:
 print('Hello, World!')
