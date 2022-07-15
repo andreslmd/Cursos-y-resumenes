@@ -171,4 +171,5 @@ i=i+1
 # Si quieres llegar a ser gran programador de Python no olvidar de estas sencillas normas. Mejorarán la legibilidad y calidad de tu código.
 
 
-#-------------------- Parte 5
+#-------------------- Parte 5 
+#
