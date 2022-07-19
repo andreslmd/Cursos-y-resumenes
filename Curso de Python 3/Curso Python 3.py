@@ -172,4 +172,12 @@ i=i+1
 
 
 #-------------------- Parte 5 
-#
+# BREVE RESEÑA DE PROGRAMACIÓN Y EMPEZANDO A PROGRAMAR EN PYTHON 3
+# La Programación es una herramienta para manipular datos, los cuales se procesan para obtener información, a través de números, símbolos, imágenes, videos, etc. Los cuales se almacenan en medios digitales.
+# Estos datos se guardan en Base de Datos para luego ser obtenidos y manipulados. Los ámbitos de gestión de estos datos pueden servir para diversas opciones: 
+# Buscar registros,  Gestionar formularios,  Crear gráficos y Programar juegos.
+# En Python existen 3 tipos de datos básicos: 1. Números, 2. Textos  y 3. Listas
+
+# NUMEROS
+# En Python podemos distinguir 2 tipos de números: Enteros y Flotantes. Esto permite a Python gestionar eficientemente la memoria. 
+# Cada línea que escribimos en el intérprete de Python es un línea de código. 
