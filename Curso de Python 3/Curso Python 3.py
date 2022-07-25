@@ -171,9 +171,10 @@ i=i+1
 # Si quieres llegar a ser gran programador de Python no olvidar de estas sencillas normas. Mejorarán la legibilidad y calidad de tu código.
 
 
-#-------------------- Parte 5 
+#-------------------- Parte 5
 # BREVE RESEÑA DE PROGRAMACIÓN Y EMPEZANDO A PROGRAMAR EN PYTHON 3
-# La Programación es una herramienta para manipular datos, los cuales se procesan para obtener información, a través de números, símbolos, imágenes, videos, etc. Los cuales se almacenan en medios digitales.
+# La Programación es una herramienta para manipular datos, los cuales se procesan para obtener información, a través de números, símbolos, imágenes, videos, etc. 
+# Los cuales se almacenan en medios digitales.
 # Estos datos se guardan en Base de Datos para luego ser obtenidos y manipulados. Los ámbitos de gestión de estos datos pueden servir para diversas opciones: 
 # Buscar registros,  Gestionar formularios,  Crear gráficos y Programar juegos.
 # En Python existen 3 tipos de datos básicos: 1. Números, 2. Textos  y 3. Listas
@@ -181,3 +182,111 @@ i=i+1
 # NUMEROS
 # En Python podemos distinguir 2 tipos de números: Enteros y Flotantes. Esto permite a Python gestionar eficientemente la memoria. 
 # Cada línea que escribimos en el intérprete de Python es un línea de código. 
+# Si escribimos una instrucción y luego la ejecutamos (shift+enter), veremos su resultado.
+# Ejemplo y al final del resultado va dar 8. Esto se da en varías operaciones aritméticas como sumas, restas.
+5+3
+
+#En el caso de los decimales, Python lo toma como un punto (.) en lugar de la coma(,) por lo que el lenguaje viene del idioma inglés.
+# Por Ejemplo un decimal se escribe así:
+2.5
+ 
+# División:
+# En el cálculo in se escribe con (/), ya que (%) es para módulo. Ya que este último muestra el resultado de una división, basicamente lo que sobra de la división.
+# Ejemplo división
+10/5
+# Ejemplo módulo. En este Ejm lo que sobra es 1. 
+10%3
+
+# Potencia
+# Para crear una potencia se necesita poner 2 ** Ejemplo.
+4**2
+
+# NOTA PRONTO ACTUALIZARE UN POCO MAS SOBRE ESTE TEMA INCLUYENDO RAIZ CUADRADA Y ORGANIZANDO UN POCO MAS YA QUE SOLO ES UN VISTAZO RAPIDO EN EL TEMA.
+
+#----------------------
+# VARIABLES 
+# Una variable, es un espacio en la memoria del PC al que se le da un nombre para almacenar un valor con un tipo específico. 
+# Como sabrás, las variables son fundamentales en todos los lenguajes. Aquí no necesitamos definir qué tipo de dato contendrá (recordar el principio de lenguaje dinámico).
+# Asignación de variable. Ejemplo
+numero = 7 
+numero
+# También se puede trabajar con las variables como si fueran numeros. Ejm numero + 3 el resultado debe dar 10. En otros casos se pueden crear varias variables y realizar operaciones con estas.
+numero+3
+
+# Nombre de las variables.
+# - Las variables no pueden comenzar con un número.  
+# - Las variables no pueden contener símbolos especiales.
+# - Las variables no pueden contener espacios/
+# - Para simular un espacio, es recomendable usar un subrayado bajo(notacion snake_case), ejemplo:
+mi_primer_variable_en_python = 'Hello, World!'
+
+# Hay otros tipos de notación de variables. Les voy a explicar
+# snake_case: es el ejemplo anterior. La ideal para usar en Python a mi gusto personal me gusta la camelCase.
+# PascualCase: La primer letra en mayuscular Ejem: PrimerVariable
+# camelCase: La primera en minuscula y la segunda en mayuscular Ejem: primerVariable NOTA la usan mucho en lenguaje Swift 
+# skewer-case: toda en minuscula y las palabras separadas por un guión Ejem: primer-variable.
+
+#----------------------
+# TEXTOS
+# Los textos son cadenas de caracteres y se expresan de diferentes formas. Se puede escribir un texto entre comillas simples o dobles. Ejemplo: 'Hello, World!' o "Hello, World!". Si se ejecuta 
+# con Shift+Enter va salir con las comillas a diferencia se se da la funcion 'print' que mas adelante la vamos a explicar.
+# Bueno y ahora te surgió la pregunta que pasa si necesito imprimir una comilla en la funcion print te adelanto asi \"comillas"\
+
+# Función Print 
+# Para evitar el tema de las comillas y la cantidad de impresiones, usaremos la función Print. Ejem print('Hello, World').
+# Esta función tiene algunas ventajas, ya que nos permite imprimir caracteres especiales, como tabulaciones, saltos de líneas, o nuevas líneas.
+# Por ejemplo, en tabulación: print(“Esto es un texto con\t tabulación”) Al ejecutarlo, veremos el siguiente resultado: Esto es un texto con​​          tabulación.
+# Para salto de línea lo que se debe hacer es \n Ejem('Hola\n mundo')
+# Se puede para imprimir variables. Ejem: noticia='estoy aprendiendo Python' print(noticia) debería en el out salir estoy aprendiendo Python
+# Por otro lado, también podemos concatenar cadenas. Cuando concatenamos 2 cadenas, tendremos una tercera. Por ejemplo: 
+# cadena1 = “esto es una primera cadena” cadena2 = “y esto es una segunda cadena” cadena3 = cadena1 + cadena2 print(cadena3) 
+# El resultado es esto es una primera cadena y esto es una segunda cadena
+
+# INDICES
+# Los indices en programción es la posición de un caracter, los caracteres pueden ser letras o palabras de acuerdo a lo que vamos a traer para un ejemplo practivo vamos a usar hola tiene 4 caractereres
+# ya que tiene 4 letras pero en programación se comienza a contar desde 0 Ejemmplo 
+# 0 = H
+# 1 = O
+# 2 = L
+# 3 = A
+# Si queremos acceder al primer índice de la cadena, debemos utilizar, justamente, los índices. Ejem Hola(0) el out o resultado sería H.
+
+#FUNCION LEN
+# Esta función nos indica la longitud de una cadena de caracteres. Si escribimos, por ejemplo: saludo = “Hola” len(saludo) El resultado debe ser: 4
+
+#------------- 
+# LISTAS
+# Las Listas nos permite agrupar distintos datos o ítems (variables o valores). Dicha Lista la podemos escribir separando los valores por comas y entre corchetes.
+# Si escribimos, por ejemplo: numeros = [2,4,6,8] Esto es una Lista en Python. Podemos crear Listas con distintos tipos de datos.
+# Las Listas también se pueden usar para hacer concatenaciones con otras listas. Si escribimos, por 
+# ejemplo: numeros = [2,4,6,8] numeros + [10,12,14 ] El resultado debe ser: 2,4,6,8,10,12,14 
+# Sin embargo, las cadenas de caracteres son inmutables, no así las listas. Es decir, las listas se pueden modificar.
+
+# Append 
+# Si queremos añadir elementos al final de una lista, podemos usar la función append. Si escribimos, 
+# por ejemplo: numeros = [2,4,6,8] numeros.append(10) numeros El resultado debe ser: 2,4,6,8,10
+
+#Asignación con Slicing 
+# Si tenemos una lista con letras, por ejemplo letras= [‘a’,’b’,’c’,’d’] y queremos cambiar las 2 primeras letras, poniéndolas en mayúscula, haremos, usando 
+# slicing: letras[:2] Aquí estamos accediendo a las 2 primeras posiciones desde el comienzo. Entonces, si quiero cambiar esos 2 valores de las posiciones elegidas, 
+# haremos: letras[:2] = [‘A’,’B’] letras El resultado debe ser: ‘A’,’B’,’c’,’d’ Borrar valores con Slicing Si escribimos letras[:2] = [] letras 
+# Aquí estaríamos vaciando la lista en los primeros 2 elementos El resultado debe ser: ’c’,’d’
+
+#--------------
+# ACCESO POR TECLADO 
+# Necesitamos ahora conocer un poco la interactividad de Python con los usuarios. 
+# Veremos una forma de leer los valores. Es importante explicar que lo que analizaremos ahora funciona para la terminal (la consola): la instrucción input 
+
+# Input 
+# Esta función nos permite guardar en una variable el dato que ingresemos por teclado. Si escribimos dato = input() Pulsa shift+enter
+# Y verás que debe aparecer un cuadro de texto pidiéndonos el dato. 
+# Escribe alguna frase o valor en el cuadro de texto y luego escribe dato 
+# El resultado debe ser el valor introducido en el cuadro de texto. La función input siempre devuelve una cadena de caracteres. 
+# Si queremos mostrar un mensaje de ingreso de datos, escribe: dato = input(“Ingrese un valor ”) El resultado debe ser: “Ingrese un valor”
+# Hay que recordar que se pueden realizar tareas con diferentes tipo de datos que se ingresar pero siempre y cuando sean los mismos Ejem no se pueden sumber int con float, tienen que ser int con int 
+# para realizar estas operaciones hay que realizar previmamente un cambios al mismo dato, mas adelante les explicare mas a fondo.
+# Ejemplo: Luego convertimos el valor a un número entero. numero = int(numero) | o con float: numero = float(numero) #convertimos a float el numero.
+
+
+#-------------------- Parte 6
+# PROGRAMANDO CON OPERADORES Y EXPRESIONES EN PYTHON
