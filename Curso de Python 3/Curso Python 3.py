@@ -439,3 +439,196 @@ a**=b
 
 #-------------------- Parte 7
 # CONTROL DE FLUJO EN PYTHON
+# ¿Qué es el Flujo en Programación? El flujo es la sucesión de instrucciones en un programa de computadora. Dichas instrucciones se ejecutan unas tras otras de manera secuencial.
+
+# Flujo
+# un programa ejecuta instrucciones, las cuales se encuentran dentro de un algoritmo, con la finalidad de procesar datos y mostrar información. 
+# No obstante, estas instrucciones a su vez deben procesarse de una forma controlada y ordenada, pudiendo la computadora elegir entre determinadas opciones o ejecutar varias veces 
+# la misma instrucción o ambas situaciones a la vez. 
+# Podemos decir que existen 2 tipos de Sentencias de Control, a saber: 
+#   Condicionales  
+#   Iterativas
+
+# SENTENCIAS CONDICIONALES 
+# Estas instrucciones se ejecutan dependiendo una condición, una situación en particular, pero nunca más de una a la vez. 
+# O se ejecuta una o se ejecuta la otra (pueden existir más de 2 condiciones y más de 2 opciones a elegir). 
+# Como vemos en la siguiente figura, el rombo es la condición por la cual el programa se bifurca. Dependiendo el resultado de la condición, podrá elegir una flecha u otra.
+
+#SENTENCIAS ITERATIVAS 
+# Estas instrucciones se ejecutan N veces, siempre siendo esta N una variable controlada, ya que de lo contrario entraríamos en un ciclo infinito lo que causaría un error grave 
+# en la ejecución del programa. El cuadrado es la sentencia iterativa que regresa al comienzo, ejecutándose tantas veces como sea la condición (rombo).
+
+#SENTENCIA IF 
+# Comencemos viendo la sentencia condicional IF, la más común en los lenguajes de programación, incluyendo Python. 
+# Esta sentencia permite dividir el flujo del programa en diversos caminos. En este caso, la computadora podrá distinguir diferentes opciones dependiendo el 
+# resultado de la pregunta IF (si). 
+# Por ejemplo, en el lenguaje coloquial, podemos hacernos esta pregunta: Si está lloviendo, Llevaré paragua y botas. Este es un ejemplo concreto de IF. 
+# Si lo pusiéramos en código, diríamos 
+lloviendo=true 
+if lloviendo: 
+    print(“voy a llevar paragua y botas”)
+
+#Condición cumplida 
+# Observa cómo el intérprete calcula la condición True (verdadero), al ser siempre verdadera la condición, devolverá lo que se encuentre adentro del bloque 
+# de código If. En este caso, el resultado de la función Print. En Python, definimos un bloque de instrucciones después de una sentencia de control con los 2 puntos. : 
+# El bloque que se encuentra dentro de los 2 puntos deberá estar indentado, ya que así sabremos qué es lo que se ejecutará. De esta forma, podremos escribir tantas instrucciones 
+# como queramos, siempre indentadas dentro del bloque if, como se observa a continuación: 
+if (condición): 
+    ​instrucciones
+
+# veamos qué pasa si la condición devuelve False. VACÍO (no la palabra VACÍO, sino que no devolverá nada). Esto ocurre ya que la condición calculada en el if devolvió False, por lo tanto nunca entra el 
+# flujo de control en el bloque de instrucciones dentro de if.
+
+#Sentencia IF con Else 
+# Ahora veremos ejemplos de usar la instrucción IF con el ELSE (sino, en español). 
+# Escribe lo siguiente en el interprete 
+a = 5 
+if a != 5: 
+    print(“El valor de a es distinto de 5”) 
+else: 
+    print(“La variable a es 5”)
+# Ejecutarlo y observa el resultado. Debería devolver: La variable a es 5 El flujo comprueba la primera condición. 
+# Al ser a == 5, entonces comprueba si es distinto, como no lo es, pasa al ELSE, ejecutando este bloque SIEMPRE ya que o se cumple la primera condición o se cumple la segunda.
+
+#Sentencia Elif 
+# Todo muy lindo hasta acá. Pero qué sucede si queremos hacer más de una comprobación? Es decir, que un número sea mayor a 10 y que sea a su vez menor a 20? Tenemos la sentencia Elif. 
+# Sirve claramente para crear menús. Veámoslo en la práctica: Escribe lo siguiente en el interprete 
+n = 15 
+if n >= 10 and n <= 20: 
+    print(“La variable n es mayor o igual a 10 y menor o igual a 20”) 
+elif n >20: 
+    print(“La variable n es mayor a 20”) 
+# Ejecutarlo y observa el resultado. Debería devolver: La variable n es mayor o igual a 10 y menor o igual a 20 
+# Ya que el flujo de control entra en el primer bloque if. Si le asignas a la variable a el valor 21, entonces entrará al elif. 
+# Puedes crear la cantidad de elif que desees.
+# Si este código lo hiciésemos con sentencias if en lugar de elif, el intérprete entraría a cada uno de los if para comprobar si coincide la condición, 
+# aun cuando en alguno ya haya ingresado. En cambio, en los elif, cuando hay una comprobación exitosa, deja de ejecutar el resto de los elif. 
+# Por lo que el flujo es más rápido y eficiente. Es importante que sepas que la sentencia SWITCH no existe en Python, pero veremos alternativas para simular dicha sentencia.
+
+# BUCLES 
+# Un bucle es realizar una determinada acción varias veces. Cada una de esas acciones repetidas se llama iteración.
+# Por su parte, la magia de los programas radica en mezclar iteraciones con sentencias if, lo cual permite profundizar en la programación y hacer código robusto y complejo.
+
+# SENTENCIA WHILE 
+# La sentencia While (mientras) tiene como objetivo repetir un bloque de código a partir de la evaluación de una condición lógica, siempre que esta sea True (verdadera). 
+# No obstante, siempre es necesario que tenemos que terminar en el bucle con una condición en falso, ya que de lo contrario el código entraría en lo llamado bucle infinito 
+# dando un error en tiempo de ejecución. Entonces, lo que necesita el bucle While es lo siguiente 
+while (condición): 
+    instrucciones break o continue o condición de salida
+
+# Combinando While con Else 
+# Es interesante que en Python podemos combinar un While con un Else, para ejecutar algo cuando el control de flujo ya no entra en el bucle While en la siguiente iteración. 
+# Escribe lo siguiente en el intérprete: 
+n = 0 
+while n < 5: 
+    print(“La variable n vale”, n) n+=1 
+else: 
+    print(“La variable ya es superior o igual a 5”)
+
+# SENTENCIA FOR 
+# La sentencia For es el tipo de sentencia de iteración el cual permite recorrer un determinado número de iteraciones. La diferencia con el bucle While es que este último 
+# se recorre un número indeterminado de iteraciones mientras una condición sea verdadera, y en cambio la sentencia For recorre desde N hasta X iteraciones, sabiéndose desde 
+# un primer momento el comienzo y el fin. Veamos un ejemplo en Python. 
+# Sin embargo, al saber de antemano el número final de elementos de la lista, podemos usar el bucle For.
+
+# Función Enumerate 
+# Esta función nos permite crear un índice en el bucle For. Se conoce como lectura secuencial con clave y valor. 
+
+
+#-------------------- Parte 8
+# COLECCIONES DE DATOS
+# En este Capítulo veremos las Colecciones de Datos en Python. Python integra las colecciones para manejar datos. 
+# En los capítulos anteriores vimos las Listas, pero hay otros tipos de colecciones que sirven para cubrir necesidades diferentes. 
+# En este capítulo aprenderemos a usar: 
+#   Tuplas  
+#   Conjuntos  
+#   Diccionarios  
+#   Pilas y Colas: no existen en Python pero las podremos simular con las listas.
+
+# TUPLAS 
+# Las Tuplas son colecciones parecidas a las Listas, con la diferencia de que estas son inmutables. 
+# Su utilización fundamental radica en el hecho de que no se puedan modificar. 
+# Python usa tuplas en funciones para devolver resultados inmutables, por tal motivo es conveniente saber interpretarlas.
+
+# Declaración de una Tupla:
+# Declarar una Tupla es similar a hacerlo con una Lista, pero en lugar de usar corchetes, usaremos paréntesis. Ejem
+miTupla = (10,20,'Hola Mundo',(1,2,5,6)) 
+miTupla  
+#Debería devolver: (10,20,”Hola Mundo”,(1,2,5,6))
+
+#Función len en una 
+# Tupla Si queremos saber la longitud de una tupla, podemos hacer: 
+len(miTupla) 
+# Al ejecutarlo mostrará la longitud de la tupla. 
+
+# Función index en una Tupla 
+# Si queremos hacer una búsqueda dentro de una tupla, podemos usar la función index. Escribe lo siguiente: 
+miTupla.index(20) 
+# Al ejecutarlo mostrará el índice en el cual se encuentra el valor 20. En este caso, será la posición 0. 
+
+#Función count en una Tupla 
+# Si queremos contar el número de elementos de una tupla, repetidos o no, usaremos el método count.
+miTupla.count() 
+
+#Al ejecutarlo mostrará la cantidad de elementos de la tupla. 
+# Si queremos buscar la cantidad de un tipo de elemento concreto, haremos lo siguiente: 
+miTupla.count(20) # buscando el elemento 20 dentro de una tupla 
+# Si buscamos un elemento inexistente, mostrará el 0 (cero) ya que habrá aparecido 0 veces.
+
+# CONJUNTOS 
+# Los conjuntos son otro tipo de colecciones desordenadas de elementos únicos. Se utilizan para hacer pruebas de pertenencia a grupos y eliminación de elementos duplicados. 
+# Veamos ejemplos en Python. Escribe lo siguiente: 
+miConjunto = set() 
+#La sentencia de arriba ha creado un conjunto vacío en Python. Si creamos un conjunto con elementos, deberemos hacer lo siguiente: 
+miConjunto = {2,4,6} 
+miConjunto
+
+# DICCIONARIOS 
+# Los diccionarios son, junto a las listas, las colecciones más usadas en Python. Se basa en estructura mapeada en el cual cada elemento de la colección se identifica con una clave. 
+# Este concepto, a su vez, también se utiliza en muchos otros lenguajes de programación, por ejemplo C#. Es importante que comprendas que no es posible haber 2 claves iguales en el 
+# mismo diccionario. Escribe lo siguiente:
+miDiccionario = {} 
+miDiccionario 
+# Aquí hemos creado un Diccionario vacío. Solo se mostrarán llaves vacías.
+
+# Type 
+# Para saber si realmente es un Diccionario el tipo que estamos declarando, usaremos la función type. Escribe lo siguiente: 
+type(miDiccionario) 
+#Deberá devolver: dict Donde dict es la palabra dictionary. 
+
+# Veamos ahora unos ejemplos del uso del Diccionario. Supongamos que queremos traducir algunos planetas vistos anteriormente, a su correspondiente inglés. 
+# Escribe lo siguiente: 
+misPlanetas = {“Mercurio”:’Mercury’, “Venus”:’Venus’, “Tierra”:’Earth’, “Marte”:’Mars’} 
+misPlanetas
+# la sintaxis del Diccionario es Nombre_Diccionario = {clave:valor} Donde la clave se encierra entre comillas dobles y el valor, entre comillas simples. No olvidar los 2 puntos :  
+# entre la clave y el valor. Una característica fundamental de los Diccionarios es que son, como sucedió con los Conjuntos, colecciones desordenadas.
+
+# Modificar registros de un Diccionario 
+# Si queremos modificar registros de un Diccionario con Python, podemos hacer lo siguiente: 
+misPlanetas[‘Mercurio’] = ‘Merccuri’ 
+misPlanetas 
+# Si lo ejecutamos, aun sabiendo que el valor es incorrecto, la idea es que conozcas que es posible redefinir un valor en los Diccionarios. 
+
+# Borrar registros de un Diccionario 
+# Si queremos borrar registros de un Diccionario con Python, podemos hacer lo siguiente: 
+del(misPlanetas[‘Mercurio’]) 
+misPlanetas 
+# Si ejecutamos, podemos ver que la clave Mercurio habrá sido eliminada. 
+# NOTA: Es importante que no pongas caracteres extraños ni acentos en las claves de un Diccionario en Python (ni en ningún otro lenguaje). 
+
+# Recorrer elementos de un Diccionario con bucle For 
+# Para recorrer los elementos de un Diccionario con un bucle For, haremos lo siguiente: 
+for planeta in misPlanetas: 
+    print(planeta) 
+
+#Al ejecutarlo, podremos ver la lista de planetas que actualmente estén en el Diccionario. Como podrás observar, solo podremos acceder a las palabras claves, no a los valores. 
+# Si queremos hacer referencia a los valores, haremos lo siguiente:
+for clave in misPlanetas: 
+    print(misPlanetas[clave]) 
+# Al ejecutarlo, podremos ver la lista de planetas pero ahora con sus valores en lugar de claves que están actualmente en el Diccionario. La palabra clave pudo haber sido otra. 
+
+# Recorrer elementos de un Diccionario con método Items 
+# Para recorrer los elementos de un Diccionario con el método Items, haremos lo siguiente: 
+for clave, valor in misPlanetas.Items(): 
+    print(clave, valor) 
+#Al ejecutarlo, podremos ver la lista de planetas con sus valores y claves, más fácilmente que en el otro caso, usando el método Items del Diccionario.

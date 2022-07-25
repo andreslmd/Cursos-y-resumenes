@@ -22,4 +22,6 @@
 
 #Parte 6 = PROGRAMANDO CON OPERADORES Y EXPRESIONES EN PYTHON (Operadores, expresiones, expresiones arigmeticas, tipos de datos logicos, operadores relaciones, operadores logicos, expresiones anidadas, operadores de asignacion)
 
-#Parte 7 = CONTROL DE FLUJO EN PYTHON
+#Parte 7 = CONTROL DE FLUJO EN PYTHON (Flujo, sentencias condicionales, sentencias iterativas, sentencia if, elif, else, sentencia cumplida, bucles, sentencia While, For, enumerate)
+
+#Parte 8 = COLECCIONES DE DATOS (Diccionarios, conjuntos)
