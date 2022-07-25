@@ -20,4 +20,6 @@
 
 #Parte 5 = BREVE RESEÑA DE PROGRAMACIÓN Y EMPEZANDO A PROGRAMAR EN PYTHON 3, Numeros(suma, resta, división, módulo que falta por pulir), Textos(funcion print, indices, funcion len ampliares mas adelante), listas (Append, Asignacion Slicing, Listas anidadas), Acceso por teclado(introducción a Input)
 
-#Parte 6 = PROGRAMANDO CON OPERADORES Y EXPRESIONES EN PYTHON
+#Parte 6 = PROGRAMANDO CON OPERADORES Y EXPRESIONES EN PYTHON (Operadores, expresiones, expresiones arigmeticas, tipos de datos logicos, operadores relaciones, operadores logicos, expresiones anidadas, operadores de asignacion)
+
+#Parte 7 = CONTROL DE FLUJO EN PYTHON

@@ -290,3 +290,152 @@ mi_primer_variable_en_python = 'Hello, World!'
 
 #-------------------- Parte 6
 # PROGRAMANDO CON OPERADORES Y EXPRESIONES EN PYTHON
+
+# OPERADORES: los Operadores son cálculos llevados a cabo sobre los argumentos conocidos como operandos. Los operadores aritméticos: Suma, resta, 
+# división y multiplicación son los ejemplos más reconocidos. Al conjunto de operando y operador, se denomina expresión.
+
+# EXPRESIONES: Los operadores aritméticos vistos anteriormente dan lugar a las expresiones de distintos tipos. Por lo tanto, si usamos operadores aritméticos, obtendremos expresiones aritméticas. 
+# Esto es cierto, pero con un pequeño matiz: 
+#   Si ambos operandos son valores literales:  
+#   3 + 4       -1.5 * 2       2/4.5  
+#   Si al menos uno de los operandos es una variable:  
+#   Radio * 3.14     (valor_hora + cant_horas)  
+#   Aquí tenemos una expresión algebraica.  
+#   Ya que el resultado es una incógnita hasta conocer el valor de la variable.
+
+# Ejemplo
+n = 0 
+while n < 10:
+    if (n % 2) == 0:
+        print(n,'es un número par')
+    else:
+        print(n,'es un número impar')
+    n = n + 1
+
+# EXPRESIONES ALGEBRAICAS 
+#   n % 2: es la expresión usando un módulo y una variable.  
+#   n = n + 1: es la expresión usando un operador de suma.  
+# EXPRESIONES RELACIONALES 
+#   n < 10: expresión relacional más pequeño que.  
+#   ==: expresión relacional de igualdad
+
+# TIPO DE DATO LOGICO
+# Este tipo tiene las siguientes características: 
+#   Mínima expresión relacional  
+#   Representada por 2 valores: verdadero y falso  
+# Es decir, en una expresión relacional, el resultado final de dicha expresión solo contendrá un valor: o es verdadero, o es falso. 
+# Es el resultado de una comparación, de una pregunta, de una condición. 
+# Toda condición o pregunta tiene un valor de sí o no, de verdadero o falso, uno o cero. 
+# Otra forma de llamar a este tipo lógico es: Booleano  Binario
+
+# Dicho de otro modo, este tipo representa la validez de una sentencia o frase dentro de un programa de computadora. Para aplicar este tipo de dato, usamos el razonamiento.
+# Ejemplo
+#   El pasto es verde
+#   El perro es un animal
+#   El canario es la ave mas grande del mundo.
+# Algunas de estas sentencias serán afirmativas o falsas. Podrás apreciar a cuál corresponde cada resultado. Bueno, esto implica un valor verdadero o falso a dicha pregunta: true or false.
+# Yendo un poco más avanzado en este tema, veremos a su vez que podemos hacer una negación de la mentira. 
+# Por ejemplo, en un día lluvioso, afirmamos: 
+#         No está lloviendo afuera 
+# Esto es una mentira, ya que sí está lloviendo. Por lo que la negación de un NO es una negación lógica. 
+#   No verdadero = falso  
+#   No falso = verdadero  
+# Solamente tenemos que aplicar la lógica humana para entenderlo.
+
+# OPERADORES RELACIONALES
+# Cuando hablamos de estos operadores, tenemos que entender la palabra relacional como “comparar”. Los operadores relacionales sirven para comparar 2 valores. 
+# Si el resultado de la comparación es correcto, entonces la expresión es VERDADERA (true), pero si no es correcto, entonces la expresión es FALSA (false).
+# igual que se representa así '=='
+# distinto de: '!='
+# mayor que '>'
+# menor que '<' 
+# mayor o igual que '>='
+# menor o igual que '<=' 
+
+# OPERADORES LOGICOS 
+# Comencemos a aprender los operadores lógicos. Existen distintos tipos de operadores lógicos.
+# Not 
+#   Es una negación lógica (NO)
+#   Solo afecta a los operadores lógicos  
+#   Solo requiere un operando  
+# Como vimos anteriormente, negar algo verdadero es lo contrario: Ejem not true devolvera false. 
+# Ya que algo que no es verdadero (NOT TRUE) es igual a falso (FALSE). Not true == false Devolvera: True
+# Ya que algo que no es verdadero (NOT TRUE) es igual a falso (FALSE), por lo tanto la comprobación es verdadera (TRUE). 
+# Esto sirve si queremos negar una expresión lógica, dándole el valor contrario. 
+# Los operadores lógicos los podemos clasificar a su vez en conjunción o disyunción. 
+# La palabra conjunción viene dada por el concepto de conjunto. Es decir, algo unido o cercano. En este caso agrupa uniendo. 
+# En cambio la palabra disyunción significa separado o apartado; agrupa separando.
+
+# Operadores Lógicos en Conjunción El operador que une es el AND (es decir, la unión lógica Y). Por ejemplo, escribe lo siguiente: 2+2 == 4 And 3+3 == 6 Debería devolver True
+# A continuación escribiré los ejemplos principales en una tabla comparativa entre posibles situaciones lógicas AND. 
+# FALSO ​​AND​​ FALSO = ​​FALSO 
+# FALSO ​​AND ​​VERDADERO = ​​FALSO 
+# VERDADERO ​AND ​​FALSO = ​​FALSO 
+# VERDADERO ​AND ​​VERDADERO = ​​VERDADERO
+
+# Operadores Lógicos en Disyunción 
+# En este caso tenemos como operador de disyunción el OR. En este caso, la diferencia es que comprueba una expresión U otra (OR = O). 
+# Es decir, si se comprueba como verdadera al menos 1 expresión, la sentencia será totalmente verdadera.
+# A continuación escribiré los ejemplos principales en una tabla comparativa entre posibles situaciones lógicas OR. 
+# FALSO ​​OR ​​FALSO = ​​FALSO 
+# FALSO ​​OR ​​VERDADERO = ​​VERDADERO 
+# VERDADERO ​OR ​​FALSO = ​​VERDADERO 
+# VERDADERO​ OR ​​VERDADERO = ​​VERDADERO
+
+# EXPRESIONES ANIDADAS 
+# Si combinamos las expresiones, podemos hacer expresiones anidadas. Podemos usar varios operadores y operandos en este tipo de expresiones. 
+# Aquí podremos ver las normas de precedencia que nos indican como se resuelven las operaciones complejas con distintos tipos de operadores. 
+# Por ejemplo, escribe lo siguiente: 
+x = 5 
+z = 3 
+x*z - 4**z and not (z % x) != 0 
+# Esto debería devolver False 
+# Aquí debemos entender las normas de precedencia. 
+#   Primero se resuelven las expresiones con los paréntesis porque tienen prioridad. 
+#   Luego, resolvemos las expresiones aritméticas por sus propias reglas (exponentes y raíces, multiplicación, división, suma, resta). Siempre de izquierda a derecha.  
+#   Luego, se resuelven los temas relacionales, de izquierda a derecha.  
+#   Finalmente, se resuelven los operadores lógicos.  
+# Es importante conocer cómo se resuelven y como se aplican las reglas de precedencia para poder programar correctamente las expresiones y que devuelvan el resultado deseado.
+
+# OPERADORES DE ASIGNACION 
+# Ahora veremos los operadores de asignación. Estos operadores no necesitan 2 operandos y solo una variable numérica. 
+# Por ejemplo, escribe lo siguiente: 
+a = 3 
+a 
+# Aquí, estamos asignando, es decir, guardando, en la variable a, el valor entero de 3. 
+# Luego, lo mostramos en pantalla. Y el resultado debería ser 3 
+# No es una comparación como ==. Sino una asignación o almacenamiento.
+
+#Suma en Asignación += 
+a=1 
+b=2 
+a+=b 
+
+#Resta en Asignación -= 
+a=1 
+b=2 
+b-=a 
+
+#Producto en Asignación *= 
+a=1 
+b=2 
+a*=b
+
+# División en Asignación /= 
+a=2 
+b=2 
+a/=b
+
+# Módulo en Asignación %= 
+a=2 
+b=2 
+a%=b 
+
+#Potencia en Asignación **= 
+a=5 
+b=5 
+a**=b
+
+
+#-------------------- Parte 7
+# CONTROL DE FLUJO EN PYTHON
